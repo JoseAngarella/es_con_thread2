@@ -7,7 +7,7 @@ public class Classifica {
     private List<Cavallo> classificaCavalli = new ArrayList<>();
 
 
-    public void add(Cavallo c){
+    synchronized public void add(Cavallo c){
         classificaCavalli.add(c);
     }
 
@@ -16,6 +16,13 @@ public class Classifica {
     public String toString() {
         return "Classifica: \n" + classificaCavalli.toString();
     }
+
+
+    public List<Cavallo> getClassificaCavalli() {
+        return classificaCavalli;
+    }
+
+    
 
     
 }

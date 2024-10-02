@@ -19,7 +19,7 @@ public class Cavallo extends Thread {
         aggiungiAllaClassifica();
     }
 
-    synchronized public void aggiungiAllaClassifica(){
+    public void aggiungiAllaClassifica(){
         classifica.add(this);
     }
 
